@@ -1,0 +1,222 @@
+@font-face {
+  font-family: GidR;
+  src: url("fonts/GideonRoman-Regular.ttf");
+}
+@font-face {
+       font-family: sairaEB;
+       src: url("fonts/SairaCondensed-ExtraBold.ttf");
+}
+   @font-face {
+       font-family: archD;
+       src: url("fonts/ArchitectsDaughter-Regular.ttf");
+     }
+
+html {
+  --color: rgb(26,62,120);
+  background: var(--color);
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+#navbar {
+  position: fixed;
+  top: 0vh;
+  width: 97vw;
+  height: min(12vh,100px);
+  display: flex;
+  justify-content: space-between;
+  background: var(--color);
+  z-index: 3;
+  border-bottom: 3px solid white;
+}
+#navbar img {
+  height: calc(60px + 1vh);
+  align-self: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+#intro {
+  color: white;
+}
+#intro h1 {
+  font-size: 1.2rem;
+}
+#intro p {
+  font-size: 0.6rem;
+}
+#navbar #nav-btn img {
+  height: calc(20px + 2vh);
+  background: var(--color);
+  padding: 5px;
+}
+#navbar #nav-btn {
+  border: 1px solid #fff;
+  height: calc(20px + 2.5vh);
+  align-self: center;
+  margin-right: 9px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+#navlinks {
+  position: fixed;
+  right: 0vw;
+  top: min(100px,12vh);
+  background: var(--color);
+  display: none;
+}
+#navlinks a {
+  text-decoration: none;
+  margin: 25px;
+  color: #ddd;
+  font-family: sairaEB;
+  letter-spacing: 3px;
+}
+#main {
+  position: absolute;
+  top: 12vh;
+  background: var(--color);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 97vw;
+}
+section {
+  margin: 30px;
+}
+#welcome-section {
+  height: 100vh;
+  margin-top: 90px;
+} 
+#welcome-section h2 {
+  font-size: 40px;
+  font-family: Monospace;
+  line-height: 1.5;
+  color: transparent;
+  text-align: center;
+  background: linear-gradient(120deg,hsl(120,100%,80%) 0%,hsl(0,100%,80%) 25%,hsl(240,100%,80%) 50%,hsl(120,100%,80%) 75%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+#welcome-section #p {
+  float: right;
+  font-size: 14px;
+  color: #ddd;
+}
+#explorations {
+  margin-top: -90px;
+}
+#explorations h2 {
+  color: #ddd;
+  font-size: 25px;
+  font-family: archD;
+  margin-bottom: 60px;
+}
+#explorations p {
+  color: #ddd;
+  clear: right;
+  font-family: GidR;
+  line-height: 1.8;
+  font-size: 14px;
+}
+#skills p {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  height: 40px;
+  margin: 10px 2px;
+  padding: 8px 12px;
+  border-radius: 32% 0 32% 0;
+  -moz-border-radius: 32% 0 32% 0;
+}
+#projects h2 { 
+  color: #fff;
+  font-family: archD;
+}
+.project-tile {
+  display: flex;
+  width: 85vw;
+  height: 220px;
+  margin: 75px 0;
+  background: #111;
+  border: 2px solid #ddd;
+}
+.project-tile img {
+  width: 100px;
+ margin: 20px; 
+}
+.project-tile div {
+  margin-left: 12px;
+}
+.project-tile div h3 {
+  color: #fff;
+  text-align: center;
+}
+.project-tile div p {
+  font-size: 13px;
+}
+.project-tile div a {
+  display: flex;
+  width: 40%;
+  margin: 32px 30%;
+  text-decoration: none;
+  border: 1px solid #fff;
+  justify-content: center;
+  align-self: center;
+}
+.project-tile div p, .project-tile div a {
+  color: #fff;
+  font-family: GidR;
+}
+#about-me h2 {
+  color: #fff;
+  font-family: archD;
+  margin-top: 120px;
+}
+
+#about-me p {
+  color: #ddd;
+  font-family: GidR;
+  font-size: 14px;
+  line-height: 1.8;
+}
+#links a {
+  display: inline-block;
+  background: white;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+#links a img {
+  width: 50px;
+  height: 50px;
+}
+h5 {
+  color: white;
+  letter-spacing: 2px;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  #navbar {
+    min-height: 100px;
+  }
+  #nav-btn {
+    display: none;
+  }
+  #navlinks {
+    display: flex;
+    position: relative;
+    top: 15px;
+    height: 80%;
+  }
+  #navlinks a {
+    display: inline-block;
+    border: 1px solid #fff;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    padding: 9px 9px;
+  }
+}

@@ -1,0 +1,26 @@
+body {
+  height: 95vh;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+#main {display: none;}
+#navbar {display: none;}
+#box {
+      width: 70px;
+      height: 70px;
+      height: 70px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      animation: anm 0.7s ease-out infinite;
+      border-top: 10px solid #0f0;
+      border-bottom: 10px solid #f00;
+    }
+@keyframes anm {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
