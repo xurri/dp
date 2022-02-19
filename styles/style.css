@@ -22,8 +22,9 @@ html {
 #navbar {
   position: fixed;
   top: 0vh;
+  left: 0vw;
   width: 97vw;
-  height: min(12vh,100px);
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   background: var(--color);
@@ -86,7 +87,7 @@ section {
 #welcome-section {
   height: 100vh;
 } 
-#welcome-section h1 {
+#welcome-section h2 {
   font-size: 40px;
   font-family: Monospace;
   line-height: 1.5;
