@@ -1,5 +1,4 @@
  $(function() {
-        $("#box").css("display","none");
         $("#navbar").css("display","flex");
         $("#main").css("display","initial");
         
